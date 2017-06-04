@@ -19,7 +19,7 @@ class Table extends Component {
     }
   }
   componentWillMount() {
-    let url = "http://myweatherforecast.southindia.cloudapp.azure.com/weatherForecast";
+    let url = "http://myweatherforecastapi.southindia.cloudapp.azure.com/weatherForecast";
     axios.get(url)
       .then(res => {
         const resData = res.data;

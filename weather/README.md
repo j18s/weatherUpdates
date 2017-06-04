@@ -46,8 +46,7 @@ sudo npm start
   ~~~~
   node ./bin/www
   ~~~~
-* There is a file called "/api/deploy/run.sh" which is running both frontend and backend servers.  
-
+  
 ### Implement with more time
 * I would love to implement 1-click deployment to production server.
 * Could have used nginx for Frontend app.
