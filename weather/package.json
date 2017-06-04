@@ -7,7 +7,6 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-router": "^4.1.1",
     "react-scripts": "1.0.7"
   },
   "scripts": {

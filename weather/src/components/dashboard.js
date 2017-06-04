@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -13,35 +14,32 @@ class Table extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: []
+      result: [],
+      city:''
     }
   }
   componentWillMount() {
-    let environment = process.env.NODE_ENV || 'development';
-    let url ="";
-    if(environment === 'development')
-    {
-      url = 'http://localhost:3001/weatherForecast';
-    }
-    else{
-      url = '/weatherForecast';
-    }
+    let url = "http://myweatherforecast.southindia.cloudapp.azure.com/weatherForecast";
     axios.get(url)
       .then(res => {
         const resData = res.data;
         this.setState({
-          result: resData.list
+          result: resData.list,
+          city: resData.city.name
         });
       });
   };
   render() {
     return (
-      <table>
-        <thead>
-          {this.generateHeaderData() }
-        </thead>
-        <tbody>{this.generateBodyData() }</tbody>
-      </table>
+      <div>
+        <span>Temperature of </span><span className="city">{this.state.city} </span><span>city</span><br/><br/>
+        <table>
+          <thead>
+            {this.generateHeaderData() }
+          </thead>
+          <tbody>{this.generateBodyData() }</tbody>
+        </table>
+      </div>
     )
   }
   generateHeaderData() {

@@ -14,3 +14,7 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+
+.city {
+    font-weight: bold;
+}
