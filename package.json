@@ -1,0 +1,27 @@
+{
+  "name": "weatherforecast",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "test": "NODE_ENV=test mocha --timeout 10000"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "lodash": "^4.17.4",
+    "morgan": "~1.8.1",
+    "pug": "^2.0.0-rc.1",
+    "request": "^2.81.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "nock": "^9.0.13",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}

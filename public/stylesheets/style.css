@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+table {
+  font-family: verdana,arial,sans-serif;
+	font-size:14px;
+	color:#333333;
+  border-style: solid;
+	border-spacing: 0.5rem;
+	border-color: #666666;
+  padding: 2px;
+}
+table tr.odd{
+  background-color: #add8e6;
+  border: 2px, solid, black;
+}
+table tr.even{
+  background-color: #fff;
+  border: 2px, solid, black;
+}
