@@ -1,0 +1,8 @@
+{
+    "baseurl": "http://localhost",
+    "port": 3001,
+    "weatherApi": "http://api.openweathermap.org/data/2.5/forecast?q=",
+    "appid": "911da1c0dc741b320b0a094655fd2d58",
+    "city": "bangalore,in",
+    "unit": "metric"
+}

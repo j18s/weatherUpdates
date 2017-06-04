@@ -1,0 +1,16 @@
+body {
+  margin: 30;
+  padding: 30;
+  font-family: sans-serif;
+}
+.head{
+  color: blue;
+}
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
